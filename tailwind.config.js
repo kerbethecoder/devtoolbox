@@ -2,7 +2,15 @@
 export default {
   content: ['./index.html', './src/**/*.{vue,js,ts,jsx,tsx}'],
   theme: {
-    extend: {},
+    container: {
+      center: true,
+    },
+    extend: {
+      fontFamily: {
+        dmserif: ['DM Serif Display', 'serif'],
+        dmsans: ['DM Sans', 'sans-serif'],
+      },
+    },
   },
   plugins: [],
 };

@@ -1,3 +1,6 @@
+<!-- npm install -D prettier prettier-plugin-tailwindcss -->
+<!-- the command above is the sole customization in this project -->
+
 ![image](./public/snap.png)
 
 ![Static Badge](https://img.shields.io/badge/vue-v3%2e4%2e31-42d392) ![Static Badge](https://img.shields.io/badge/tailwindcss-v3%2e4%2e7-38bdf8)
