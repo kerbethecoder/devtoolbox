@@ -1,14 +1,50 @@
 <script setup>
+import { computed } from 'vue';
 import { RouterLink, RouterView } from 'vue-router';
 
 import BaseFooter from './components/BaseFooter.vue';
-
 import router from './router';
 
-router.isReady().then(() => {
-  const currentPathObject = router.currentRoute.value.fullPath;
-  // console.log('Route Object', currentPathObject);
-});
+const routes = [
+  {
+    path: '/inspirations',
+    label: 'Inspirations',
+  },
+  {
+    path: '/colors',
+    label: 'Colors',
+  },
+  {
+    path: '/fonts',
+    label: 'Fonts',
+  },
+  {
+    path: '/illustrations',
+    label: 'Illustrations',
+  },
+  {
+    path: '/loaders',
+    label: 'Loaders',
+  },
+  {
+    path: '/icons',
+    label: 'Icons',
+  },
+  {
+    path: '/backgrounds',
+    label: 'Backgrounds',
+  },
+  {
+    path: '/UIs',
+    label: 'UIs',
+  },
+  {
+    path: '/templates',
+    label: 'Templates',
+  },
+];
+
+const currentPath = computed(() => router.currentRoute.value.fullPath);
 </script>
 
 <template>
@@ -25,29 +61,38 @@ router.isReady().then(() => {
       <nav
         class="col-start-3 h-fit min-w-fit space-y-10 rounded-2xl bg-[#d9d9d9] p-8"
       >
-        <div class="links flex flex-col">
-          <RouterLink to="/">Home</RouterLink>
-          <RouterLink to="/inspirations">Inspirations</RouterLink>
-          <RouterLink to="/colors">Colors</RouterLink>
-          <RouterLink to="/fonts">Fonts</RouterLink>
-          <RouterLink to="/illustrations">Illustrations</RouterLink>
-          <RouterLink to="/loaders">Loaders</RouterLink>
-          <RouterLink to="/icons">Icons</RouterLink>
-          <RouterLink to="/backgrounds">Backgrounds</RouterLink>
-          <RouterLink to="/UIs">UIs</RouterLink>
-          <RouterLink to="/templates">Templates</RouterLink>
+        <div class="links flex flex-col gap-2">
+          <RouterLink
+            v-for="route in routes"
+            :key="route.path"
+            :to="route.path"
+            :class="
+              currentPath === route.path
+                ? 'font-bold underline decoration-2 underline-offset-4'
+                : 'transitionA'
+            "
+            >{{ route.label }}</RouterLink
+          >
         </div>
         <div class="flex flex-col gap-2">
-          <button
-            class="whitespace-nowrap rounded-md bg-[#1a1a1a] px-8 py-4 font-bold text-[#eeeeee]"
+          <RouterLink to="/">
+            <button
+              class="w-full rounded-md bg-[#1a1a1a] px-8 py-3 font-bold text-[#eeeeee] transition duration-300 ease-in-out hover:scale-105"
+            >
+              Developer
+            </button>
+          </RouterLink>
+          <a
+            href="https://kerbethecoder.com/"
+            target="_blank"
+            rel="noopener noreferrer"
           >
-            The NotePad.
-          </button>
-          <button
-            class="whitespace-nowrap rounded-md border border-[#1a1a1a] px-8 py-4 font-bold"
-          >
-            Dev Portfolio
-          </button>
+            <button
+              class="w-full rounded-md border border-[#1a1a1a] px-8 py-3 font-bold transition duration-300 ease-in-out hover:scale-105"
+            >
+              Portfolio
+            </button>
+          </a>
         </div>
       </nav>
       <div class="col-span-6 col-start-5">
@@ -61,5 +106,29 @@ router.isReady().then(() => {
 <style scoped>
 .borderGuide {
   border: 1px solid red;
+}
+
+.transitionA {
+  display: inline-block;
+  position: relative;
+  width: fit-content;
+}
+
+.transitionA::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #1a1a1a;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.transitionA:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
 }
 </style>
