@@ -24,9 +24,3 @@ import BaseNav from './components/BaseNav.vue';
     <BaseFooter class="row-span-2" />
   </main>
 </template>
-
-<style scoped>
-.borderGuide {
-  border: 1px solid red;
-}
-</style>
