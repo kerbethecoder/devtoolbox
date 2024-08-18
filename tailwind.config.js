@@ -7,8 +7,8 @@ export default {
     },
     extend: {
       fontFamily: {
-        dmserif: ['Abril Fatface', 'serif'],
-        dmsans: ['Poppins', 'sans-serif'],
+        abril: ['Abril Fatface', 'serif'],
+        inter: ['Inter', 'sans-serif'],
       },
     },
   },
