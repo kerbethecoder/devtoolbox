@@ -37,7 +37,7 @@ const SITES = [
     <div
       v-for="site in SITES"
       :key="site.title"
-      class="shdow flex w-[450px] gap-5 rounded-2xl bg-[#d9d9d9] px-6 py-6"
+      class="shdow flex w-[450px] gap-5 rounded-2xl bg-[#d9d9d9] p-6"
     >
       <img
         :src="site.imgSrc"
