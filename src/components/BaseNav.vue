@@ -22,10 +22,6 @@ const ROUTES = [
     label: 'Illustrations',
   },
   {
-    path: '/loaders',
-    label: 'Loaders',
-  },
-  {
     path: '/icons',
     label: 'Icons',
   },

@@ -29,11 +29,6 @@ const router = createRouter({
       component: () => import('../views/IllustrationsView.vue'),
     },
     {
-      path: '/loaders',
-      name: 'loaders',
-      component: () => import('../views/LoadersView.vue'),
-    },
-    {
       path: '/icons',
       name: 'icons',
       component: () => import('../views/IconsView.vue'),
