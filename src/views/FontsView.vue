@@ -1,21 +1,21 @@
 <script setup>
 const SITES = [
   {
-    imgSrc: 'src/assets/thumbnails/notepad-fonts.png',
+    imgSrc: 'src/assets/thumbnails/fonts/notepad-fonts.png',
     alt: 'The NotePad. website snapshot',
     title: 'The NotePad.',
     url: 'https://the-notepad-by-kerbe.vercel.app/font-pairings',
     description: 'Explore curated font pairings to enhance your design.',
   },
   {
-    imgSrc: 'src/assets/thumbnails/fontpair.png',
+    imgSrc: 'src/assets/thumbnails/fonts/fontpair.png',
     alt: 'fontpair.co website snapshot',
     title: 'fontpair',
     url: 'https://www.fontpair.co/',
     description: 'Find perfect font pairings for your design projects.',
   },
   {
-    imgSrc: 'src/assets/thumbnails/google-fonts.png',
+    imgSrc: 'src/assets/thumbnails/fonts/google-fonts.png',
     alt: 'google fonts website snapshot',
     title: 'Google Fonts',
     url: 'https://fonts.google.com/',
@@ -43,7 +43,7 @@ const SITES = [
             :href="site.url"
             target="_blank"
             rel="noopener noreferrer"
-            className="transition duration-300 ease-in-out hover:scale-125"
+            class="transition duration-300 ease-in-out hover:scale-125"
           >
             <i class="fa-solid fa-up-right-from-square text-[#1a1a1a]"></i>
           </a>

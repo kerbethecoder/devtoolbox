@@ -1,7 +1,7 @@
 <script setup>
 const SITES = [
   {
-    imgSrc: 'src/assets/thumbnails/shecodes.png',
+    imgSrc: 'src/assets/thumbnails/colors/shecodes.png',
     alt: 'SheCodes website snapshot',
     title: 'SheCodes',
     url: 'https://palettes.shecodes.io/',
@@ -9,21 +9,21 @@ const SITES = [
       'Discover and explore stunning color palettes for your projects.',
   },
   {
-    imgSrc: 'src/assets/thumbnails/coolors.png',
+    imgSrc: 'src/assets/thumbnails/colors/coolors.png',
     alt: 'Coolors website snapshot',
     title: 'Coolors',
     url: 'https://coolors.co/',
     description: 'Effortlessly generate and explore color palettes.',
   },
   {
-    imgSrc: 'src/assets/thumbnails/uigradients.png',
+    imgSrc: 'src/assets/thumbnails/colors/uigradients.png',
     alt: 'UI Gradients website snapshot',
     title: 'UI Gradients',
     url: 'https://uigradients.com/#MidnightCity',
     description: 'Discover and create beautiful gradient combinations.',
   },
   {
-    imgSrc: 'src/assets/thumbnails/coolors-gradients.png',
+    imgSrc: 'src/assets/thumbnails/colors/coolors-gradients.png',
     alt: 'Coolors Gradients website snapshot',
     title: 'Coolors Gradients',
     url: 'https://coolors.co/gradients',
@@ -51,7 +51,7 @@ const SITES = [
             :href="site.url"
             target="_blank"
             rel="noopener noreferrer"
-            className="transition duration-300 ease-in-out hover:scale-125"
+            class="transition duration-300 ease-in-out hover:scale-125"
           >
             <i class="fa-solid fa-up-right-from-square text-[#1a1a1a]"></i>
           </a>
