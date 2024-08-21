@@ -1,6 +1,13 @@
 <script setup>
 const SITES = [
   {
+    imgSrc: 'src/assets/thumbnails/icons/bootstrap-icons.png',
+    alt: 'Bootstrap Icons website snapshot',
+    title: 'Bootstrap Icons',
+    url: 'https://icons.getbootstrap.com/',
+    description: 'Free, customizable icons for Bootstrap projects.',
+  },
+  {
     imgSrc: 'src/assets/thumbnails/icons/fontawesome.png',
     alt: 'Font Awesome website snapshot',
     title: 'Font Awesome',
@@ -14,6 +21,13 @@ const SITES = [
     title: 'Heroicons',
     url: 'https://heroicons.com/',
     description: 'Free, customizable icons for modern web and UI designs.',
+  },
+  {
+    imgSrc: 'src/assets/thumbnails/icons/m3-icons.png',
+    alt: 'M3 google fonts website snapshot',
+    title: 'Material Design Icons',
+    url: 'https://fonts.google.com/icons',
+    description: 'Open-source icons, easy to use and style.',
   },
 ];
 </script>

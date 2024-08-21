@@ -6,21 +6,19 @@ import BaseNav from './components/BaseNav.vue';
 </script>
 
 <template>
-  <main class="grid min-h-screen grid-rows-12 place-items-center">
-    <div class="row-span-2 row-start-2 space-y-3 text-center">
+  <main class="flex h-screen flex-col items-center justify-center">
+    <div class="flex w-full flex-col items-center justify-center gap-2 pt-10">
       <h1 class="font-abril text-5xl font-bold">DevToolBox</h1>
-      <p class="px-[500px] text-lg">
+      <p class="w-1/2 text-center text-lg">
         DevToolBox is a curated collection of essential resources and tools,
         helping developers find the perfect inspirations and solutions for their
         projects.
       </p>
     </div>
-    <section class="row-span-8 grid grid-cols-12">
-      <BaseNav />
-      <div class="col-span-6 col-start-5">
-        <RouterView />
-      </div>
+    <section class="mx-44 my-10 flex flex-1 items-start justify-center gap-40">
+      <BaseNav class="" />
+      <RouterView class="" />
     </section>
-    <BaseFooter class="row-span-2" />
+    <BaseFooter class="pb-10" />
   </main>
 </template>
