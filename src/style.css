@@ -8,41 +8,26 @@
   html {
     font-family: 'Poppins', sans-serif;
   }
+
+  .ftr {
+    font-family: 'Inter', sans-serif;
+  }
 }
 
 /* TODO: add dark mode/light mode */
 
 :root {
-  color-scheme: light dark;
-  color: #1a1a1a;
-
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 
-  --font-primary: 'Abril Fatface', serif;
-  --font-secondary: 'Poppins', sans-serif;
-  --font-tertiary: 'Inter', sans-serif;
-  /* --light-bg: #c3c3c3; */
-  background-color: #c3c3c3;
+  --font-headings: 'Abril Fatface', serif;
+
   --dark-bg: #1a1a1a;
   --dark-btn: #1a1a1a;
 }
 
 .bgPattern {
   background-image: url('./assets/topography.svg');
-}
-
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
 }

@@ -6,11 +6,16 @@ export default {
       center: true,
     },
     extend: {
+      colors: {
+        lightClr: '#c3c3c3',
+        darkClr: '#1a1a1a',
+      },
       fontFamily: {
         abril: ['Abril Fatface', 'serif'],
         inter: ['Inter', 'sans-serif'],
       },
     },
   },
+  darkMode: 'selector',
   plugins: [],
 };
