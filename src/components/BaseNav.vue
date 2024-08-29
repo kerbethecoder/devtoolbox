@@ -44,7 +44,7 @@ const currentPath = computed(() => router.currentRoute.value.fullPath);
 
 <template>
   <nav
-    class="shdow col-start-3 h-fit min-w-fit space-y-10 rounded-2xl bg-[#d9d9d9] p-8"
+    class="shdow bg-lightScnd dark:bg-darkScnd text-darkFnt dark:text-lightFnt col-start-3 h-fit min-w-fit space-y-10 rounded-2xl p-8"
   >
     <div class="links flex flex-col gap-2">
       <RouterLink
@@ -62,7 +62,7 @@ const currentPath = computed(() => router.currentRoute.value.fullPath);
     <div class="flex flex-col gap-2">
       <RouterLink to="/">
         <button
-          class="w-full rounded-md bg-[#1a1a1a] px-8 py-3 font-bold text-[#eeeeee] transition duration-300 ease-in-out hover:scale-105"
+          class="text-lightFnt dark:text-darkFnt bg-darkScnd dark:bg-lightScnd w-full rounded-md px-8 py-3 font-bold transition duration-200 ease-in-out hover:scale-105"
         >
           Developer
         </button>
@@ -73,7 +73,7 @@ const currentPath = computed(() => router.currentRoute.value.fullPath);
         rel="noopener noreferrer"
       >
         <button
-          class="w-full rounded-md border border-[#1a1a1a] px-8 py-3 font-bold transition duration-300 ease-in-out hover:scale-105"
+          class="border-darkScnd dark:border-lightScnd w-full rounded-md border px-8 py-3 font-bold transition duration-200 ease-in-out hover:scale-105"
         >
           Portfolio
         </button>
@@ -83,6 +83,10 @@ const currentPath = computed(() => router.currentRoute.value.fullPath);
 </template>
 
 <style scoped>
+html.dark .transitionA::after {
+  background-color: #eee;
+}
+
 .transitionA {
   display: inline-block;
   position: relative;

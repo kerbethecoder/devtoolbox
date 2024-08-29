@@ -1,6 +1,6 @@
 <template>
   <div
-    class="shdow flex w-full items-center gap-12 rounded-2xl bg-[#d9d9d9] px-20 py-10"
+    class="shdow bg-lightScnd dark:bg-darkScnd text-darkFnt dark:text-lightFnt flex w-full items-center gap-12 rounded-2xl px-20 py-10"
   >
     <img src="../assets/avatar.svg" alt="avatar" width="170" height="170" />
     <div class="flex flex-col items-center gap-7">
@@ -16,7 +16,9 @@
         rel="noopener noreferrer"
         className="transition duration-300 ease-in-out hover:scale-125"
       >
-        <i class="fa-brands fa-github fa-2x text-[#1a1a1a]"></i>
+        <i
+          class="fa-brands fa-github fa-2x text-darkFnt dark:text-lightFnt"
+        ></i>
       </a>
     </div>
   </div>

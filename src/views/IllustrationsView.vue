@@ -42,12 +42,11 @@ const SITES = [
 </script>
 
 <template>
-  <!-- TODO: add a layout that will make the items overflow with a fixed height -->
   <section class="flex flex-wrap gap-10">
     <div
       v-for="site in SITES"
       :key="site.title"
-      class="shdow flex w-[450px] gap-5 rounded-2xl bg-[#d9d9d9] p-6"
+      class="shdow bg-lightScnd dark:bg-darkScnd text-darkFnt dark:text-lightFnt flex w-[450px] gap-5 rounded-2xl p-6"
     >
       <img
         :src="site.imgSrc"
@@ -63,10 +62,14 @@ const SITES = [
             rel="noopener noreferrer"
             class="transition duration-300 ease-in-out hover:scale-125"
           >
-            <i class="fa-solid fa-up-right-from-square text-[#1a1a1a]"></i>
+            <i
+              class="fa-solid fa-up-right-from-square text-darkFnt dark:text-lightFnt"
+            ></i>
           </a>
         </div>
-        <hr class="border-black opacity-10" />
+        <hr
+          class="border-darkScnd dark:border-lightScnd opacity-10 dark:opacity-30"
+        />
         <p>{{ site.description }}</p>
       </div>
     </div>

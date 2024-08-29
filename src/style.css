@@ -14,18 +14,11 @@
   }
 }
 
-/* TODO: add dark mode/light mode */
-
 :root {
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-
-  --font-headings: 'Abril Fatface', serif;
-
-  --dark-bg: #1a1a1a;
-  --dark-btn: #1a1a1a;
 }
 
 .bgPattern {
