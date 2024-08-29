@@ -44,7 +44,7 @@ const currentPath = computed(() => router.currentRoute.value.fullPath);
 
 <template>
   <nav
-    class="bg-lightScnd dark:bg-darkScnd text-darkFnt dark:text-lightFnt col-start-3 h-fit min-w-fit space-y-10 rounded-2xl p-8 shadow-xl"
+    class="col-start-3 h-fit min-w-fit space-y-10 rounded-2xl bg-lightScnd p-8 text-darkFnt shadow-xl dark:bg-darkScnd dark:text-lightFnt"
   >
     <div class="links flex flex-col gap-2">
       <RouterLink
@@ -62,7 +62,7 @@ const currentPath = computed(() => router.currentRoute.value.fullPath);
     <div class="flex flex-col gap-2">
       <RouterLink to="/">
         <button
-          class="text-lightFnt dark:text-darkFnt bg-darkScnd dark:bg-lightScnd w-full rounded-md px-8 py-3 font-bold transition duration-200 ease-in-out hover:scale-105"
+          class="w-full rounded-md bg-darkScnd px-8 py-3 font-bold text-lightFnt transition duration-200 ease-in-out hover:scale-105 dark:bg-lightScnd dark:text-darkFnt"
         >
           Developer
         </button>
@@ -73,7 +73,7 @@ const currentPath = computed(() => router.currentRoute.value.fullPath);
         rel="noopener noreferrer"
       >
         <button
-          class="border-darkScnd dark:border-lightScnd w-full rounded-md border px-8 py-3 font-bold transition duration-200 ease-in-out hover:scale-105"
+          class="w-full rounded-md border border-darkScnd px-8 py-3 font-bold transition duration-200 ease-in-out hover:scale-105 dark:border-lightScnd"
         >
           Portfolio
         </button>
@@ -84,7 +84,7 @@ const currentPath = computed(() => router.currentRoute.value.fullPath);
 
 <style scoped>
 html.dark .transitionA::after {
-  background-color: #eee;
+  background-color: #e3e3e3;
 }
 
 .transitionA {

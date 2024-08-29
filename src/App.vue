@@ -11,13 +11,13 @@ import ToggleSwitch from './components/ToggleSwitch.vue';
     <div class="mt-10 flex flex-col items-center justify-center gap-4">
       <div class="flex items-center gap-10">
         <h1
-          class="dark:text-lightFnt text-darkFnt font-abril text-5xl font-bold"
+          class="font-abril text-5xl font-bold text-darkFnt dark:text-lightFnt"
         >
           DevToolBox
         </h1>
         <ToggleSwitch />
       </div>
-      <p class="text-darkFnt text-center dark:text-lightClr">
+      <p class="text-center text-darkFnt dark:text-lightClr">
         DevToolBox is a curated collection of essential resources and tools,
         helping developers find the perfect inspirations and solutions for their
         projects.
@@ -25,7 +25,7 @@ import ToggleSwitch from './components/ToggleSwitch.vue';
     </div>
     <section class="mx-44 my-10 flex flex-1 items-start justify-center gap-40">
       <BaseNav />
-      <RouterView class="" />
+      <RouterView />
     </section>
     <BaseFooter />
   </main>
