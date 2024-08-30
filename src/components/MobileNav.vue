@@ -94,7 +94,6 @@ const currentPath = computed(() => router.currentRoute.value.name);
 .off-canvas a {
   display: block;
   margin: 10px 0;
-  /* color: #1a1a1a; */
   text-decoration: none;
 }
 

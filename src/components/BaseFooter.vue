@@ -1,10 +1,12 @@
 <template>
-  <section class="w-full px-96">
-    <hr class="border-1 border-[#1a1a1a33] dark:border-lightClr" />
+  <section class="w-full lg:px-96">
+    <hr class="border-1 dark:border-lightBg border-[#1a1a1a33]" />
     <p
-      class="flex justify-between p-10 text-center text-[#1a1a1a33] dark:text-lightClr"
+      class="flex justify-between p-10 text-center text-[#1a1a1a33] dark:text-lightFnt"
     >
-      <span class="font-bold">kerby cantos © {{ new Date().getFullYear() }} &middot; </span>
+      <span class="font-bold"
+        >kerby cantos © {{ new Date().getFullYear() }}
+      </span>
       <span class="space-x-4">
         <a
           href="https://www.linkedin.com/in/krbycnts/"

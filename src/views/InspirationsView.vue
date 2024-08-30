@@ -48,12 +48,14 @@ const SITES = [
     <div class="hidden w-1/3 justify-end lg:flex">
       <BaseNav class="w-fit" />
     </div>
-    <div class="flex flex-wrap justify-center gap-6 lg:w-2/3 lg:justify-normal">
+    <div
+      class="flex flex-wrap justify-center gap-6 lg:w-2/3 lg:content-start lg:justify-normal"
+    >
       <div
         v-for="site in SITES"
         :key="site.title"
         id="card"
-        class="flex w-full gap-4 rounded-xl bg-lightScnd p-6 text-darkFnt shadow-xl sm:w-1/2 lg:w-full lg:transition lg:duration-300 lg:ease-in-out lg:hover:-translate-y-1 xl:w-1/3 dark:bg-darkScnd dark:text-lightFnt"
+        class="flex h-fit w-full gap-4 rounded-xl bg-lightScnd p-6 text-darkFnt shadow-xl sm:w-1/2 lg:w-full lg:transition lg:duration-300 lg:ease-in-out lg:hover:-translate-y-1 xl:w-1/3 dark:bg-darkScnd dark:text-lightFnt"
       >
         <img
           :src="site.imgSrc"

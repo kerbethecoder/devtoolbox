@@ -44,7 +44,7 @@ const currentPath = computed(() => router.currentRoute.value.fullPath);
 
 <template>
   <nav
-    class="col-start-3 h-fit min-w-fit space-y-10 rounded-2xl bg-lightScnd p-8 text-darkFnt shadow-xl dark:bg-darkScnd dark:text-lightFnt"
+    class="col-start-3 h-fit min-w-fit space-y-10 rounded-2xl bg-lightScnd p-8 text-darkFnt shadow-xl lg:transition lg:duration-200 dark:bg-darkScnd dark:text-lightFnt"
   >
     <div class="links flex flex-col gap-2">
       <RouterLink
