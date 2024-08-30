@@ -4,7 +4,7 @@
     <p
       class="flex justify-between p-10 text-center text-[#1a1a1a33] dark:text-lightClr"
     >
-      <span>kerby cantos © {{ new Date().getFullYear() }} &middot; </span>
+      <span class="font-bold">kerby cantos © {{ new Date().getFullYear() }} &middot; </span>
       <span class="space-x-4">
         <a
           href="https://www.linkedin.com/in/krbycnts/"

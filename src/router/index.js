@@ -5,37 +5,37 @@ const router = createRouter({
   routes: [
     {
       path: '/',
-      name: 'home',
+      name: 'Developer',
       component: () => import('../views/HomeView.vue'),
     },
     {
       path: '/inspirations',
-      name: 'inspirations',
+      name: 'Inspirations',
       component: () => import('../views/InspirationsView.vue'),
     },
     {
       path: '/colors',
-      name: 'colors',
+      name: 'Colors',
       component: () => import('../views/ColorsView.vue'),
     },
     {
       path: '/fonts',
-      name: 'fonts',
+      name: 'Fonts',
       component: () => import('../views/FontsView.vue'),
     },
     {
       path: '/illustrations',
-      name: 'illustrations',
+      name: 'Illustrations',
       component: () => import('../views/IllustrationsView.vue'),
     },
     {
       path: '/icons',
-      name: 'icons',
+      name: 'Icons',
       component: () => import('../views/IconsView.vue'),
     },
     {
       path: '/backgrounds',
-      name: 'backgrounds',
+      name: 'Backgrounds',
       component: () => import('../views/BackgroundsView.vue'),
     },
     {
@@ -45,7 +45,7 @@ const router = createRouter({
     },
     {
       path: '/templates',
-      name: 'templates',
+      name: 'Templates',
       component: () => import('../views/TemplatesView.vue'),
     },
   ],

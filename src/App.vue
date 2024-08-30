@@ -7,7 +7,7 @@ import ToggleSwitch from './components/ToggleSwitch.vue';
 </script>
 
 <template>
-  <main class="flex h-screen flex-col items-center justify-center">
+  <main class="hidden h-screen flex-col items-center justify-center lg:flex">
     <div class="mt-10 flex flex-col items-center justify-center gap-4">
       <div class="flex items-center gap-10">
         <h1
