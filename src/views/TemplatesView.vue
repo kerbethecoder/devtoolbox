@@ -1,9 +1,17 @@
 <script setup>
 import BaseNav from '../components/BaseNav.vue';
+import {
+  Gatsby,
+  Next,
+  React,
+  Svelte,
+  SvelteKit,
+  Vue,
+} from '../assets/thumbnails/templates/index';
 
 const SITES = [
   {
-    imgSrc: 'src/assets/thumbnails/templates/gatsby.png',
+    imgSrc: Gatsby,
     alt: 'Gatsby template website snapshot',
     title: 'Gatsby',
     url: 'https://github.com/kerbethecoder/gatsby',
@@ -11,7 +19,7 @@ const SITES = [
       'A ready-to-use Gatsby template for fast and efficient static site generation.',
   },
   {
-    imgSrc: 'src/assets/thumbnails/templates/next.png',
+    imgSrc: Next,
     alt: 'Next template website snapshot',
     title: 'Next',
     url: 'https://github.com/kerbethecoder/next',
@@ -19,14 +27,14 @@ const SITES = [
       'A Next.js template designed for scalable and optimized React applications.',
   },
   {
-    imgSrc: 'src/assets/thumbnails/templates/react.png',
+    imgSrc: React,
     alt: 'React template website snapshot',
     title: 'React',
     url: 'https://github.com/kerbethecoder/react',
     description: 'A versatile React template for rapid development.',
   },
   {
-    imgSrc: 'src/assets/thumbnails/templates/svelte.png',
+    imgSrc: Svelte,
     alt: 'Svelte template website snapshot',
     title: 'Svelte',
     url: 'https://github.com/kerbethecoder/svelte',
@@ -34,7 +42,7 @@ const SITES = [
       'A simple and efficient Svelte template for quick development.',
   },
   {
-    imgSrc: 'src/assets/thumbnails/templates/sveltekit.png',
+    imgSrc: SvelteKit,
     alt: 'SvelteKit template website snapshot',
     title: 'SvelteKit',
     url: 'https://github.com/kerbethecoder/sveltekit',
@@ -42,7 +50,7 @@ const SITES = [
       'A modern SvelteKit template for building high-performance web apps.',
   },
   {
-    imgSrc: 'src/assets/thumbnails/templates/vue.png',
+    imgSrc: Vue,
     alt: 'Vue template website snapshot',
     title: 'Vue',
     url: 'https://github.com/kerbethecoder/vue',

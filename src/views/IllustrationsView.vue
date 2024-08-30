@@ -1,9 +1,16 @@
 <script setup>
 import BaseNav from '../components/BaseNav.vue';
+import {
+  DesignStripe,
+  EmojiDB,
+  OpenPeeps,
+  StorySet,
+  UnDraw,
+} from '../assets/thumbnails/illustrations/index';
 
 const SITES = [
   {
-    imgSrc: 'src/assets/thumbnails/illustrations/designstripe.png',
+    imgSrc: DesignStripe,
     alt: 'Designstripe website snapshot',
     title: 'designstripe',
     url: 'https://designstripe.com/search/illustrations',
@@ -11,21 +18,21 @@ const SITES = [
       'Access customizable illustrations for your creative projects.',
   },
   {
-    imgSrc: 'src/assets/thumbnails/illustrations/emojidb.png',
+    imgSrc: EmojiDB,
     alt: 'Emojidb website snapshot',
     title: 'Emojidb',
     url: 'https://emojidb.org/',
     description: 'Find a vast collection of emojis for any context.',
   },
   {
-    imgSrc: 'src/assets/thumbnails/illustrations/openpeeps.png',
+    imgSrc: OpenPeeps,
     alt: 'OpenPeeps website snapshot',
     title: 'OpenPeeps',
     url: 'https://www.openpeeps.com/',
     description: 'Get hand-drawn, customizable illustrations for your designs.',
   },
   {
-    imgSrc: 'src/assets/thumbnails/illustrations/storyset.png',
+    imgSrc: StorySet,
     alt: 'storyset website snapshot',
     title: 'storyset',
     url: 'https://storyset.com/',
@@ -33,7 +40,7 @@ const SITES = [
       'Explore and use free, editable illustrations to tell your story.',
   },
   {
-    imgSrc: 'src/assets/thumbnails/illustrations/undraw.png',
+    imgSrc: UnDraw,
     alt: 'unDraw website snapshot',
     title: 'unDraw',
     url: 'https://undraw.co/',

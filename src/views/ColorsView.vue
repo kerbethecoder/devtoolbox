@@ -1,9 +1,15 @@
 <script setup>
 import BaseNav from '../components/BaseNav.vue';
+import {
+  SheCodes,
+  Coolors,
+  UIGradients,
+  CoolorsGradients,
+} from '../assets/thumbnails/colors/index';
 
 const SITES = [
   {
-    imgSrc: 'src/assets/thumbnails/colors/shecodes.png',
+    imgSrc: SheCodes,
     alt: 'SheCodes website snapshot',
     title: 'SheCodes',
     url: 'https://palettes.shecodes.io/',
@@ -11,21 +17,21 @@ const SITES = [
       'Discover and explore stunning color palettes for your projects.',
   },
   {
-    imgSrc: 'src/assets/thumbnails/colors/coolors.png',
+    imgSrc: Coolors,
     alt: 'Coolors website snapshot',
     title: 'Coolors',
     url: 'https://coolors.co/',
     description: 'Effortlessly generate and explore color palettes.',
   },
   {
-    imgSrc: 'src/assets/thumbnails/colors/uigradients.png',
+    imgSrc: UIGradients,
     alt: 'UI Gradients website snapshot',
     title: 'UI Gradients',
     url: 'https://uigradients.com/#MidnightCity',
     description: 'Discover and create beautiful gradient combinations.',
   },
   {
-    imgSrc: 'src/assets/thumbnails/colors/coolors-gradients.png',
+    imgSrc: CoolorsGradients,
     alt: 'Coolors Gradients website snapshot',
     title: 'Coolors Gradients',
     url: 'https://coolors.co/gradients',

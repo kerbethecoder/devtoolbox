@@ -1,16 +1,23 @@
 <script setup>
 import BaseNav from '../components/BaseNav.vue';
+import {
+  AwwwardsIcon,
+  BehanceIcon,
+  DribbleIcon,
+  FramerIcon,
+  WebflowIcon,
+} from '../assets/thumbnails/inspirations/index';
 
 const SITES = [
   {
-    imgSrc: 'src/assets/thumbnails/inspirations/awwwards.png',
+    imgSrc: AwwwardsIcon,
     alt: 'Awwwards website snapshot',
     title: 'Awwwards',
     url: 'https://www.awwwards.com/websites/',
     description: 'Showcasing the best in web design and UI inspiration.',
   },
   {
-    imgSrc: 'src/assets/thumbnails/inspirations/behance.png',
+    imgSrc: BehanceIcon,
     alt: 'Behance website snapshot',
     title: 'Behance',
     url: 'https://www.behance.net/search/projects/Web%20Design%20Inspiration',
@@ -18,7 +25,7 @@ const SITES = [
       'Discover creative projects and design inspiration from top designers.',
   },
   {
-    imgSrc: 'src/assets/thumbnails/inspirations/dribble.png',
+    imgSrc: DribbleIcon,
     alt: 'Dribble website snapshot',
     title: 'Dribble',
     url: 'https://dribbble.com/tags/web-design-inspiration',
@@ -26,14 +33,14 @@ const SITES = [
       'Explore design ideas and UI concepts from the creative community.',
   },
   {
-    imgSrc: 'src/assets/thumbnails/inspirations/framer.png',
+    imgSrc: FramerIcon,
     alt: 'Framer website snapshot',
     title: 'Framer',
     url: 'https://www.framer.com/marketplace/',
     description: 'Inspiration and tools for interactive web and UI design.',
   },
   {
-    imgSrc: 'src/assets/thumbnails/inspirations/webflow.png',
+    imgSrc: WebflowIcon,
     alt: 'Webflow website snapshot',
     title: 'Webflow',
     url: 'https://webflow.com/templates',

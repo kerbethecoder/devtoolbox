@@ -1,23 +1,28 @@
 <script setup>
 import BaseNav from '../components/BaseNav.vue';
+import {
+  NotePadFonts,
+  fontpair,
+  GoogleFonts,
+} from '../assets/thumbnails/fonts/index';
 
 const SITES = [
   {
-    imgSrc: 'src/assets/thumbnails/fonts/notepad-fonts.png',
+    imgSrc: NotePadFonts,
     alt: 'The NotePad. website snapshot',
     title: 'The NotePad.',
     url: 'https://the-notepad-by-kerbe.vercel.app/font-pairings',
     description: 'Explore curated font pairings to enhance your design.',
   },
   {
-    imgSrc: 'src/assets/thumbnails/fonts/fontpair.png',
+    imgSrc: fontpair,
     alt: 'fontpair.co website snapshot',
     title: 'fontpair',
     url: 'https://www.fontpair.co/',
     description: 'Find perfect font pairings for your design projects.',
   },
   {
-    imgSrc: 'src/assets/thumbnails/fonts/google-fonts.png',
+    imgSrc: GoogleFonts,
     alt: 'google fonts website snapshot',
     title: 'Google Fonts',
     url: 'https://fonts.google.com/',

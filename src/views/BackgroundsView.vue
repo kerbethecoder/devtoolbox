@@ -1,23 +1,30 @@
 <script setup>
 import BaseNav from '../components/BaseNav.vue';
+import {
+  BGJar,
+  CSSPatterns,
+  Haikei,
+  HeroPatterns,
+  SuperDesigner,
+} from '../assets/thumbnails/backgrounds/index';
 
 const SITES = [
   {
-    imgSrc: 'src/assets/thumbnails/backgrounds/bg-jar.png',
+    imgSrc: BGJar,
     alt: 'BG Jar website snapshot',
     title: 'BG Jar',
     url: 'https://bgjar.com/',
     description: 'Create beautiful SVG backgrounds for websites and apps.',
   },
   {
-    imgSrc: 'src/assets/thumbnails/backgrounds/css-patterns.png',
+    imgSrc: CSSPatterns,
     alt: 'CSS Patterns website snapshot',
     title: 'CSS Patterns',
     url: 'https://css-pattern.com/',
     description: 'Create seamless patterns using CSS for your web projects.',
   },
   {
-    imgSrc: 'src/assets/thumbnails/backgrounds/haikei.png',
+    imgSrc: Haikei,
     alt: 'Haikei website snapshot',
     title: 'Haikei',
     url: 'https://haikei.app/generators/',
@@ -25,7 +32,7 @@ const SITES = [
       'Generate unique, customizable backgrounds for your creative projects.',
   },
   {
-    imgSrc: 'src/assets/thumbnails/backgrounds/hero-patterns.png',
+    imgSrc: HeroPatterns,
     alt: 'Hero Patterns website snapshot',
     title: 'Hero Patterns',
     url: 'https://heropatterns.com/',
@@ -33,7 +40,7 @@ const SITES = [
       'Generate repeatable SVG background patterns for your designs.',
   },
   {
-    imgSrc: 'src/assets/thumbnails/backgrounds/superdesigner.png',
+    imgSrc: SuperDesigner,
     alt: 'Super Designer website snapshot',
     title: 'Super Designer',
     url: 'https://superdesigner.co/',

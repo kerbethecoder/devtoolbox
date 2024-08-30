@@ -1,19 +1,22 @@
 <script setup>
 import BaseNav from '../components/BaseNav.vue';
-
-import bootstrapicons from '../assets/thumbnails/icons/bootstrap-icons.png';
-import { HeroIcon } from '../assets/thumbnails/icons/index';
+import {
+  BootstrapIcon,
+  FAIcon,
+  HeroIcon,
+  MaterialIcon,
+} from '../assets/thumbnails/icons/index';
 
 const SITES = [
   {
-    imgSrc: bootstrapicons,
+    imgSrc: BootstrapIcon,
     alt: 'Bootstrap Icons website snapshot',
     title: 'Bootstrap Icons',
     url: 'https://icons.getbootstrap.com/',
     description: 'Free, customizable icons for Bootstrap projects.',
   },
   {
-    imgSrc: 'FAIcons',
+    imgSrc: FAIcon,
     alt: 'Font Awesome website snapshot',
     title: 'Font Awesome',
     url: 'https://fontawesome.com/',
@@ -28,7 +31,7 @@ const SITES = [
     description: 'Free, customizable icons for modern web and UI designs.',
   },
   {
-    imgSrc: 'MaterialIcons',
+    imgSrc: MaterialIcon,
     alt: 'M3 google fonts website snapshot',
     title: 'Material Design Icons',
     url: 'https://fonts.google.com/icons',

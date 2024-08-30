@@ -1,44 +1,52 @@
 <script setup>
 import BaseNav from '../components/BaseNav.vue';
+import {
+  CSSLoaders,
+  HeadlessUI,
+  OneDivLoaders,
+  TailwindUI,
+  UIBall,
+  UIVerse,
+} from '../assets/thumbnails/uis/index';
 
 const SITES = [
   {
-    imgSrc: 'src/assets/thumbnails/uis/css-loaders.png',
+    imgSrc: CSSLoaders,
     alt: 'CSS Loaders website snapshot',
     title: 'CSS Loaders',
     url: 'https://css-loaders.com/',
     description: 'A collection of pure CSS loaders for your web projects.',
   },
   {
-    imgSrc: 'src/assets/thumbnails/uis/headlessui.png',
+    imgSrc: HeadlessUI,
     alt: 'Headless UI website snapshot',
     title: 'Headless UI',
     url: 'https://headlessui.com/',
     description: 'Unstyled, accessible UI components built for React and Vue.',
   },
   {
-    imgSrc: 'src/assets/thumbnails/uis/one-div-loaders.png',
+    imgSrc: OneDivLoaders,
     alt: 'One Div Loaders website snapshot',
     title: 'One Div Loaders',
     url: 'https://onedivloaders.vercel.app/',
     description: 'Simple, creative loaders made with just one div.',
   },
   {
-    imgSrc: 'src/assets/thumbnails/uis/tailwindui.png',
+    imgSrc: TailwindUI,
     alt: 'Tailwind UI website snapshot',
     title: 'Tailwind UI',
     url: 'https://tailwindui.com/',
     description: 'Beautifully designed UI components built with Tailwind CSS.',
   },
   {
-    imgSrc: 'src/assets/thumbnails/uis/uiball.png',
+    imgSrc: UIBall,
     alt: 'UI Ball website snapshot',
     title: 'UI Ball',
     url: 'https://uiball.com/ldrs/',
     description: 'Explore a variety of CSS-based UI loaders and animations.',
   },
   {
-    imgSrc: 'src/assets/thumbnails/uis/uiverse.png',
+    imgSrc: UIVerse,
     alt: 'uiverse website snapshot',
     title: 'uiverse',
     url: 'https://uiverse.io/',
