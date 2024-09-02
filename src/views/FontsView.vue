@@ -4,6 +4,9 @@ import {
   NotePadFonts,
   fontpair,
   GoogleFonts,
+  FontJoy,
+  FontShare,
+  Monotype,
 } from '../assets/thumbnails/fonts/index';
 
 const SITES = [
@@ -27,6 +30,30 @@ const SITES = [
     title: 'Google Fonts',
     url: 'https://fonts.google.com/',
     description: 'Access a vast library of free, open-source fonts.',
+  },
+  {
+    imgSrc: FontShare,
+    alt: 'font share website snapshot',
+    title: 'Font Share',
+    url: 'https://www.fontshare.com/',
+    description:
+      'A free, high-quality font library for personal and commercial use.',
+  },
+  {
+    imgSrc: FontJoy,
+    alt: 'font joy website snapshot',
+    title: 'Font Joy',
+    url: 'https://fontjoy.com/',
+    description:
+      'A tool that generates harmonious font pairings with AI assistance.',
+  },
+  {
+    imgSrc: Monotype,
+    alt: 'monotype website snapshot',
+    title: 'Monotype',
+    url: 'https://www.monotype.com/font-pairing#/playground?fontPair1=Vicky&fontPair2=Suprema',
+    description:
+      'A renowned platform offering premium fonts and typography solutions.',
   },
 ];
 </script>
